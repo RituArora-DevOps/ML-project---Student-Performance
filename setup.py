@@ -17,7 +17,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name='heart-risk-predictor',
+    name='student-performance-prediction',
       version='0.0.1',
       description='Python Distribution Utilities',
       author='Ritu Arora',
