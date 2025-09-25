@@ -40,3 +40,11 @@ Absences, etc.
 Results:
 
 Achieved up to XX% accuracy in predicting student performance categories (pass/fail or grade range, depending on your target variable). Also performed feature importance analysis.
+
+
+docker build -t student-performance-app .
+docker login
+docker tag student-performance-app dockerhubusername/student-performance-app:latest
+docker push dockerhubusername/student-performance-app:latest
+
+docker run -p 5000:5000 student-performance-app
