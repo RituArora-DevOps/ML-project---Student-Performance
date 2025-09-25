@@ -48,3 +48,13 @@ docker tag student-performance-app dockerhubusername/student-performance-app:lat
 docker push dockerhubusername/student-performance-app:latest
 
 docker run -p 5000:5000 student-performance-app
+
+sudo apt-get update -y
+sudo apt-get upgrade
+
+curl -fssl https://get.docker.com -o get-docker.sh
+sudo sh get-docker .sh
+sudo usermod -aG docker ubuntu
+newgrp docker
+
+AWS Deployment
